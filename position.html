@@ -41,6 +41,28 @@
             width: 200px;
             height: 200px;
           }
+
+          h1::after{
+            content: '.pdf';
+            color:rebeccapurple;
+            font-size: 12px;
+            font-weight: 900;
+          }
+          h1::before{
+            content: 'start-';
+            color: aqua;
+          }
+          p::first-letter{
+            font-size: 30px;
+            color: red;
+          }
+          p::first-line{
+            font-weight: 900;
+          }
+          p::selection{
+            color: red;
+            background-color: black;
+          }
     </style>
 </head>
 <body>
@@ -84,6 +106,16 @@
         <div class="dummy"></div>
         <div class="dummy"></div>
         <div class="dummy"></div>
+    </div>
+    <div>
+      <h1>heading-1</h1>
+      <h1>heading-2</h1>
+      <h1>heading-3</h1>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex cupiditate molestias delectus error dolor ipsum cum laboriosam eligendi ipsa.</p>
+        <p>Iusto, ad esse ab veniam nulla nam molestias nostrum voluptate corporis, optio, earum aliquam delectus? Dolorum iure voluptates ducimus labore.</p>
+        <p>Consectetur voluptatem eum ratione. Repellat deleniti dolores dolore, tempora harum, minima consectetur rem saepe a obcaecati reprehenderit vitae expedita veritatis!</p>
     </div>
 </body>
 </html>
